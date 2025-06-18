@@ -3,5 +3,5 @@ git add: agregar cada uno o todos los archivos para el comit sigueinte
 git commit -m "comentario": para sacar la fotogtafia o guardar cambios (sin subir), es como poner un punto de guardado
 git remote add origin url: para enlazarlo con la plataforma git en la cual se guardara
 git push -u origin master: para enviar la informacion hacia el repositorio
-git pull -u origin master: para bajar los ccambios relizados en el proyecto
+git pull -u origin master: para bajar los cambios relizados en el proyecto
 git clone url: donde diga url ahi pondras la url del repositorio en git
