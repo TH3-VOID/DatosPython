@@ -8,7 +8,8 @@ lista = [0, "A"]*10
 Superlist = lista + LISTA
 lisT = list(range(10))
 lisT = list(range(1, 11))  # del 1 al 10
-listNum = list(range(1, 11))
+listNum = list(range(1, 11)*2)
+
 
 # ---------------- AGREGAR / INSERTAR -----------------------
 # Te permite agregar un nuevo dato al final de la lista
@@ -69,7 +70,7 @@ len(lista)  # cuenta los elementos dentro de la lista
 min(lisT)  # Devuelve el numero mas pequeño (solo funciona con numericos)
 max(lisT)  # Devuelve el numero grande (solo funciona con numericos)
 sum(lisT)  # suma todos los numeros dentro de tu arreglo (no debe tener str)
-
+numerosNotDuplicado = list(set(listNum))  # Elimina los duplicados de la lista
 
 # ----------------- MATRIZ ------------------
 # Caracteristicas: Ordenados, Heterogeneos, Mutables, Con repeticion
