@@ -11,6 +11,7 @@ Inicializá una lista vacía tareas = [].
 -- Eliminar una tarea por nombre
 -- Salir
 """
+
 import os
 import time
 
@@ -18,11 +19,13 @@ tareas = []
 while True:
     try:
         os.system("cls")
-        print("Seleccione una opcion a realizar: \n"
-              "1. Agregar tarea\n"
-              "2. Mostrar todas las tareas\n"
-              "3. Eliminar una tarea por nombre\n"
-              "4. Salir")
+        print(
+            "Seleccione una opcion a realizar: \n"
+            "1. Agregar tarea\n"
+            "2. Mostrar todas las tareas\n"
+            "3. Eliminar una tarea por nombre\n"
+            "4. Salir"
+        )
         print("--------------------------------------------------")
         tarea = int(input("Ingrese la opcion que desea realizar: "))
 
@@ -46,7 +49,8 @@ while True:
                 os.system("cls")
                 if tareas:
                     TaskDelete = str(
-                        input("Ingrese el nombre de la tarea a eliminar: "))
+                        input("Ingrese el nombre de la tarea a eliminar: ")
+                    )
                     try:
                         tareas.remove(TaskDelete)
                         print(f"Tarea {TaskDelete} eliminada correctamente.")

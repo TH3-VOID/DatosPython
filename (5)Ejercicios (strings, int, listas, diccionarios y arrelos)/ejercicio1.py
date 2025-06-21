@@ -10,13 +10,15 @@ while True:
     try:
         if n1 != 0:
             TipoOperacion = str(
-                input("Coloque el tipo de operacion que desea realizar: "))
+                input("Coloque el tipo de operacion que desea realizar: ")
+            )
             if TipoOperacion == "salir":
                 break
         else:
             n1 = int(input("Digite el primer numero: "))
             TipoOperacion = str(
-                input("Coloque el tipo de operacion que desea realizar:"))
+                input("Coloque el tipo de operacion que desea realizar:")
+            )
             if TipoOperacion == "salir":
                 break
         n2 = int(input("Coloque el segundo numero: "))

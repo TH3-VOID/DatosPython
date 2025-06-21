@@ -1,4 +1,4 @@
-""""
+""" "
 Ejercicio 6: Adivina el número
 Objetivo: Bucles, if, funciones, manejo de entrada.
 Instrucciones:
@@ -7,6 +7,7 @@ Instrucciones:
 - Si el número es mayor o menor, indicá pistas.
 - Terminá cuando adivine.
 """
+
 import random
 
 
@@ -34,7 +35,8 @@ def jugar():
                 print("El número es menor.")
             else:
                 print(
-                    f"¡Felicidades! Adivinaste el número {numSecreto} en {intentos} intentos.")
+                    f"¡Felicidades! Adivinaste el número {numSecreto} en {intentos} intentos."
+                )
                 break
         except ValueError:
             print("Por favor, ingresa un número válido.")

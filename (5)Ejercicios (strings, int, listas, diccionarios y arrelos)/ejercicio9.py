@@ -14,8 +14,13 @@ Hacé una función que reciba una cadena y:
 def convertir_texto(cadena):
     mayusculas = cadena.upper()
     invertida = cadena[::-1]
-    reemplazada = cadena.replace(
-        "a", "*").replace("e", "*").replace("i", "*").replace("o", "*").replace("u", "*")
+    reemplazada = (
+        cadena.replace("a", "*")
+        .replace("e", "*")
+        .replace("i", "*")
+        .replace("o", "*")
+        .replace("u", "*")
+    )
     return mayusculas, invertida, reemplazada
 
 

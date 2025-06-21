@@ -19,20 +19,20 @@ def tiene_mas_de_7_letras(palabras):
 
 
 def terminan_en_s(palabras):
-    endWithS = [palabra for palabra in palabras if palabra.endswith('s')]
+    endWithS = [palabra for palabra in palabras if palabra.endswith("s")]
     print(f"Las palabras que terminan en 's' son: {', '.join(endWithS)}")
 
 
 def contiene_numeros(palabras):
-    NumbersInWords = [palabra for palabra in palabras if any(
-        char.isdigit() for char in palabra)]
-    print(
-        f"Las palabras que contienen números son: {', '.join(NumbersInWords)}")
+    NumbersInWords = [
+        palabra for palabra in palabras if any(char.isdigit() for char in palabra)
+    ]
+    print(f"Las palabras que contienen números son: {', '.join(NumbersInWords)}")
 
 
 try:
     cadena = input("Ingrese una lista de palabras separadas por comas: ")
-    palabras = cadena.replace(' ', '').split(',')
+    palabras = cadena.replace(" ", "").split(",")
     print(palabras)
     if palabras:
         tiene_mas_de_7_letras(palabras)

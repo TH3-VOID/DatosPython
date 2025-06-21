@@ -22,12 +22,19 @@ def eiliminar_duplicados(lista):
 
 while True:
     try:
-        entrada = str(input(
-            "Ingrese una cadena de texto o numeros (Cada elemento separado de otro): "))
-        lista = entrada.replace(',', "").split()
-        accion = int(input("Ingerse la opcion que desea realizar: \n"
-                           "1. Eliminar duplicados\n"
-                           "2. Salir\n"))
+        entrada = str(
+            input(
+                "Ingrese una cadena de texto o numeros (Cada elemento separado de otro): "
+            )
+        )
+        lista = entrada.replace(",", "").split()
+        accion = int(
+            input(
+                "Ingerse la opcion que desea realizar: \n"
+                "1. Eliminar duplicados\n"
+                "2. Salir\n"
+            )
+        )
         match accion:
             case 1:
                 os.system("cls")

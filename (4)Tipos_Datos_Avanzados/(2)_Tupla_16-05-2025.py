@@ -1,4 +1,3 @@
-
 # ----------------------- TUPLAS -------------------
 # Caracteristicas: Ordenados, Heterogeneos, No Mutables, Con Repeticion
 Tupla = (1, "perro", True, 1.22)

@@ -1,5 +1,5 @@
-edad = int(input('ingrese su edad: '))
-mensaje = ''
+edad = int(input("ingrese su edad: "))
+mensaje = ""
 # ---------------CASO 1------------------------------
 # if edad >= 18:
 #     mensaje = "Cuenta con la edad necesario para acceder"
@@ -11,5 +11,9 @@ mensaje = ''
 # print(mensaje)
 
 # ---------------CASO 2------------------------------
-mensaje = 'Cuenta con la edad suficiente \nIngrese a su sala correspondiente' if edad >= 18 else 'no cuenta con la edad suficiente  \nretirese'
+mensaje = (
+    "Cuenta con la edad suficiente \nIngrese a su sala correspondiente"
+    if edad >= 18
+    else "no cuenta con la edad suficiente  \nretirese"
+)
 print(mensaje)

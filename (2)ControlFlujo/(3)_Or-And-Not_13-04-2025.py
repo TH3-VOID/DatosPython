@@ -6,7 +6,7 @@ edad = 18
 mensaje = ""
 
 if gasonila and (encendido or edad > 17):
-    mensaje = 'Puedes Avanzar'
+    mensaje = "Puedes Avanzar"
 else:
     mensaje = "No cuentas con lo requerido"
 print(mensaje)

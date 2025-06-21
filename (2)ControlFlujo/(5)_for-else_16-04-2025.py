@@ -10,7 +10,7 @@ for numero in range(5):
     i += 1
     print(i)
     if numero == buscar:
-        print(f'Se ha encontrado: {buscar}')
+        print(f"Se ha encontrado: {buscar}")
         break
 else:
-    print('No se ha encontrado el numero buscado')
+    print("No se ha encontrado el numero buscado")

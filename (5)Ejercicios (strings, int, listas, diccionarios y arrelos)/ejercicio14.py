@@ -13,8 +13,10 @@ Instrucciones:
 
 Tip: list comprehension, next() con default.
 """
+
 import os as os
 import time as t
+
 usuarios = []
 
 
@@ -23,15 +25,20 @@ def AddUser(nombre, edad, email):  # Agrega un nuevo usuario a la lista de usuar
     print(f"Se ha agregado correctamente el usuari: {nombre}")
 
 
-def searchUser(name):  # Busca un usuario por nombre y devuelve el primer encontrado o None si no existe
-    return next((user for user in usuarios if user["nombre"].lower() == name.lower()), None)
+def searchUser(
+    name,
+):  # Busca un usuario por nombre y devuelve el primer encontrado o None si no existe
+    return next(
+        (user for user in usuarios if user["nombre"].lower() == name.lower()), None
+    )
 
 
 def showUsers():
     if usuarios:
         for i, user in enumerate(usuarios, start=1):  # Muestra todos los usuarios
             print(
-                f"{i}. Nombre: {user["nombre"]}, edad: {user["edad"]}, email: {user["email"]}")
+                f"{i}. Nombre: {user["nombre"]}, edad: {user["edad"]}, email: {user["email"]}"
+            )
     else:
         print("No hay usuarios registrados.")
 
@@ -48,12 +55,14 @@ def deleteUser(name):  # Elimina un usuario por nombre
 while True:
     try:
         os.system("cls")
-        print("Seleccione una opción: \n"
-              "1.Agregar \n"
-              "2.Buscar \n"
-              "3.Mostrar \n"
-              "4.Eliminar \n"
-              "5.Salir")
+        print(
+            "Seleccione una opción: \n"
+            "1.Agregar \n"
+            "2.Buscar \n"
+            "3.Mostrar \n"
+            "4.Eliminar \n"
+            "5.Salir"
+        )
         print("--------------------------------------------------")
         opcion = int(input("Ingrese la opcion que desea realizar: "))
         match opcion:
@@ -70,7 +79,8 @@ while True:
                 user = searchUser(nombre)
                 if user != None:
                     print(
-                        f"Nombre: {user["nombre"]}, edad: {user["edad"]}, email: {user["email"]}")
+                        f"Nombre: {user["nombre"]}, edad: {user["edad"]}, email: {user["email"]}"
+                    )
                     t.sleep(2)
                 else:
                     print(f"No se encontró el usuario con nombre: {nombre}.")

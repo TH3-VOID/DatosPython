@@ -3,12 +3,12 @@
 # Caracteristicas: Ordenados, Heterogeneos, Mutables, Con repeticion
 LISTA = [1, "perro", True, 22, "gato", "dato", 1.22]
 # Crea 10 veces el 0 y la A
-lista = [0, "A"]*10
+lista = [0, "A"] * 10
 # crear una lista de listas
 Superlist = lista + LISTA
 lisT = list(range(10))
 lisT = list(range(1, 11))  # del 1 al 10
-listNum = list(range(1, 11)*2)
+listNum = list(range(1, 11) * 2)
 
 
 # ---------------- AGREGAR / INSERTAR -----------------------
@@ -21,9 +21,7 @@ v1, v2, v3, v4, *todos = listNum
 print(v1, v2, v3, v4, *todos)
 v1, v2, *todos, v9, v10 = listNum
 print(v1, v2, v9, *todos, v10)
-usuarios = [["Elmer", 1],
-            ["Diego", 2],
-            ["Juan", 3]]
+usuarios = [["Elmer", 1], ["Diego", 2], ["Juan", 3]]
 
 # ---------------- CONTAR / BUSCAR -----------------------
 # Te envia el numero de veces que se ha repetido un elemento
@@ -74,8 +72,6 @@ numerosNotDuplicado = list(set(listNum))  # Elimina los duplicados de la lista
 
 # ----------------- MATRIZ ------------------
 # Caracteristicas: Ordenados, Heterogeneos, Mutables, Con repeticion
-MATRIZ = [[1, "perro", True, 1.22],
-          [1, "perro", True, 1.22],
-          [1, "perro", True, 1.22]]
+MATRIZ = [[1, "perro", True, 1.22], [1, "perro", True, 1.22], [1, "perro", True, 1.22]]
 
 # print(MATRIZ)

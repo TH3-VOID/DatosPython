@@ -8,9 +8,11 @@ Instrucciones:
 
 Tip: try/except ZeroDivisionError, f-strings.
 """
+
 import random as rd
 import os as os
 import time as t
+
 historial = []
 
 
@@ -26,12 +28,12 @@ def obtenerID():
 def insertHistorial(TipoOperacion, operacion, resultado):
     try:
         Tiempo = t.strftime("%Y-%m-%d %H:%M:%S")
-        historial.append((obtenerID(), TipoOperacion,
-                         operacion, resultado, Tiempo))
+        historial.append((obtenerID(), TipoOperacion, operacion, resultado, Tiempo))
         print(f"Datos insertados correctamente")
     except Exception as e:
         print(
-            f"Ha ocurrido un problema de tipo: ({e}) al tratar de insertar la historia")
+            f"Ha ocurrido un problema de tipo: ({e}) al tratar de insertar la historia"
+        )
 
 
 def operaciones(TipoOperacion, Num1, Num2):
@@ -57,7 +59,8 @@ def operaciones(TipoOperacion, Num1, Num2):
         print("No se ha podido realizar la divicion por cero")
     except Exception as e:
         print(
-            f"Ha ocurrido un problema de tipo: ({e}) al tratar de realizar la operacion")
+            f"Ha ocurrido un problema de tipo: ({e}) al tratar de realizar la operacion"
+        )
 
 
 def showHistorial():
@@ -65,12 +68,14 @@ def showHistorial():
         if historial:
             for i, datos in enumerate(historial, start=1):
                 print(
-                    f"{i}. ID: {datos[0]}, Tipo de Operacion: {datos[1]}, Operacion: {datos[2]} = {datos[3]}, fecha: {datos[4]}")
+                    f"{i}. ID: {datos[0]}, Tipo de Operacion: {datos[1]}, Operacion: {datos[2]} = {datos[3]}, fecha: {datos[4]}"
+                )
         else:
             print("No hay datos en el historial")
     except Exception as e:
         print(
-            f"Ha ocurrido un problema de tipo: ({e}) al tratar de mostrar el historial")
+            f"Ha ocurrido un problema de tipo: ({e}) al tratar de mostrar el historial"
+        )
 
 
 def inicio():
@@ -87,7 +92,8 @@ def inicio():
                 case 1:
                     os.system("cls")
                     print(
-                        "Ingrese la operacion que desea realizar: \n1. Suma. \n2. Resta. \n3. Multiplicacion. \n4. Division")
+                        "Ingrese la operacion que desea realizar: \n1. Suma. \n2. Resta. \n3. Multiplicacion. \n4. Division"
+                    )
                     operacion = int(input())
                     num1 = float(input("Ingrese el primer numero: "))
                     num2 = float(input("Ingrese el segundo numero: "))
@@ -103,7 +109,8 @@ def inicio():
                     break
         except Exception as e:
             print(
-                f"Ha ocurrido un problema de tipo: ({e}) al tratar de realizar la operacion")
+                f"Ha ocurrido un problema de tipo: ({e}) al tratar de realizar la operacion"
+            )
 
 
 inicio()

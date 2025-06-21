@@ -28,26 +28,26 @@ def palabras_con_mas_de_5_letras(cadena):
     for palabra in cadena:
         if len(palabra) > 5:
             palabras_con_mas_de_5_letras.append(palabra)
-    print(
-        f"Palabras con más de 5 letras: {', '.join(palabras_con_mas_de_5_letras)}")
+    print(f"Palabras con más de 5 letras: {', '.join(palabras_con_mas_de_5_letras)}")
 
 
 def palabras_que_empiezan_con_vocal(cadena):
     palabras_que_empiezan_con_vocal = []
     for palabra in cadena:
-        if palabra[0].lower() in 'aeiou':
+        if palabra[0].lower() in "aeiou":
             palabras_que_empiezan_con_vocal.append(palabra)
     print(
-        f"Palabras que empiezan con vocal: {', '.join(palabras_que_empiezan_con_vocal)}")
+        f"Palabras que empiezan con vocal: {', '.join(palabras_que_empiezan_con_vocal)}"
+    )
 
 
 while True:
     try:
         frase = input("Ingrese una frase (o 'salir' para terminar): ")
-        if frase.lower() == 'salir':
+        if frase.lower() == "salir":
             print("Saliendo del programa...")
             break
-        palabras = frase.replace(',', '').split()
+        palabras = frase.replace(",", "").split()
         es_palindromo(palabras)
         palabras_con_mas_de_5_letras(palabras)
         palabras_que_empiezan_con_vocal(palabras)

@@ -1,8 +1,8 @@
-saludo = 'Hola a todos'
+saludo = "Hola a todos"
 
 
 def saludo1():
-    saludo = 'Hola Elmer'
+    saludo = "Hola Elmer"
     print(saludo)
 
 

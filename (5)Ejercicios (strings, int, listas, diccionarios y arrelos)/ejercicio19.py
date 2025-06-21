@@ -4,8 +4,7 @@ import time as t
 
 
 def obtenerPalabraSecreta() -> str:
-    palabras = ["palabra", "python", "programacion",
-                "ejercicio", "desafio", "codigo"]
+    palabras = ["palabra", "python", "programacion", "ejercicio", "desafio", "codigo"]
     return rd.choice(palabras).upper()
 
 
@@ -51,7 +50,7 @@ def juegoAhorcado() -> None:
             juegoTerminado = True
             print("Felicidades has concluido el juego la palabra era:", palabraSecreta)
         t.sleep(2)
-        os.system('cls')
+        os.system("cls")
 
 
 juegoAhorcado()

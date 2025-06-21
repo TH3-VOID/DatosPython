@@ -1,4 +1,3 @@
-
 # ----------------------- DICCIONARIOS -------------------
 # Caracteristicas: No Ordenados, Heterogeneos, Mutables, Sin Repeticion (tomara el valor de la ultima repeticion)
 diccionario = {"v1": 1, "v2": "2", "v3": True, 1: False, (1, 2): "tupla"}
@@ -23,17 +22,18 @@ print(diccionario)
 if "v1" in diccionario:
     print(diccionario["v1"])
 else:
-    print('No se ha encontrado dentro')
+    print("No se ha encontrado dentro")
 
 # forma 2: iterar y imprimir keys y valores
 for key, valor in diccionario.items():
     print(key, valor)
 
 
-usuarios = [{"id": 1, "Nombre": "Juan", "edad": 22},
-            {"id": 2, "Nombre": "Elmer", "edad": 21},
-            {"id": 3, "Nombre": "Diego", "edad": 20}
-            ]
+usuarios = [
+    {"id": 1, "Nombre": "Juan", "edad": 22},
+    {"id": 2, "Nombre": "Elmer", "edad": 21},
+    {"id": 3, "Nombre": "Diego", "edad": 20},
+]
 # forma 3: iterar y acceder a un valor especifico
 for usuario in usuarios:
     print(usuario["Nombre"])

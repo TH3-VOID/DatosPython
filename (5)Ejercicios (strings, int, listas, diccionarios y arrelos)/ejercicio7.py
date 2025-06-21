@@ -21,7 +21,9 @@ def validar_cotraseña(cadena):
     if not any(char.isdigit() for char in cadena):
         return "La contraseña debe contener al menos un número."
     if not any(char in "@#$%&*!" for char in cadena):
-        return "La contraseña debe contener al menos un carácter especial (@, #, $, etc.)."
+        return (
+            "La contraseña debe contener al menos un carácter especial (@, #, $, etc.)."
+        )
 
     return "Contraseña válida."
 

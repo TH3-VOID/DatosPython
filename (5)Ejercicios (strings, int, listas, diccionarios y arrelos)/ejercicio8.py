@@ -9,16 +9,15 @@ Mostrá este menú hasta que el usuario elija salir:
 - 3. Salir
 Usá match para decidir qué hacer según la opción.
 """
+
 import os
 import datetime
 import time
+
 while True:
     try:
         os.system("cls")
-        print("Menú:\n"
-              "1. Saludar\n"
-              "2. Mostrar fecha actual\n"
-              "3. Salir")
+        print("Menú:\n" "1. Saludar\n" "2. Mostrar fecha actual\n" "3. Salir")
         opcion = int(input("Ingrese la opcion: "))
         match opcion:
             case 1:
