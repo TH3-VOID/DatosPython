@@ -40,5 +40,5 @@ while True:
                     print("No se puede dividir por cero")
         n1 = n1
         TipoOperacion = ""
-    except Exception as e:
+    except Exception:
         print("Ingrese un valor valido")

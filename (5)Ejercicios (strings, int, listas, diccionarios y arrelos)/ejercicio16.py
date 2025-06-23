@@ -29,7 +29,7 @@ def insertHistorial(TipoOperacion, operacion, resultado):
     try:
         Tiempo = t.strftime("%Y-%m-%d %H:%M:%S")
         historial.append((obtenerID(), TipoOperacion, operacion, resultado, Tiempo))
-        print(f"Datos insertados correctamente")
+        print("Datos insertados correctamente")
     except Exception as e:
         print(
             f"Ha ocurrido un problema de tipo: ({e}) al tratar de insertar la historia"
