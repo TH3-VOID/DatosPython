@@ -1,0 +1,23 @@
+Ejercicio 1: Sistema de Gestión de Biblioteca
+Descripción:
+Crea un sistema para gestionar libros en una biblioteca.
+Debe permitir:
+1. Agregar libros (título, autor, ISBN)
+2. Prestar libros (por ISBN)
+3. Devolver libros
+4. Listar todos los libros
+
+Requerimientos:
+
+- Usar diccionarios para representar libros:
+    libro = {
+        "titulo": "Cien años de soledad",
+        "autor": "García Márquez",
+        "ISBN": "123456",
+        "disponible": True
+    }
+- Validar ISBN único al agregar libros.
+- Manejar errores cuando:
+    - Se intente prestar un libro no disponible
+    - Se ingrese un ISBN inexistente
+    - Se ingresen datos inválidos (ej. ISBN no numérico)

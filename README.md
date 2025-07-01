@@ -38,9 +38,9 @@ El objetivo: **convertirme en analista de datos junior+** en menos de 6 meses, c
 
 | Semana | Tema / Módulo | ✔ |
 |--------|---------------|---|
-| 0 | Kick-off & setup | ☐ |
-| 1 | ControlFlujo avanzado | ☐ |
-| 2 | Errores & logging | ☐ |
+| 0 | Kick-off & setup | ✔ |
+| 1 | ControlFlujo avanzado | ✔ |
+| 2 | Errores & logging | ✔ |
 | 3 | pandas 3.0 I | ☐ |
 | 4 | pandas II (transform) | ☐ |
 | 5 | Polars y rendimiento | ☐ |
