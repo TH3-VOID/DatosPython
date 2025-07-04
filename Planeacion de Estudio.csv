@@ -1,0 +1,27 @@
+,,,,,,,,,,
+,Semana,Tema / Objetivo,Sesión 1,Sesión 2,Sesión 3,Sesión 4,Sesión 5,Entregable + KPI,,Carpetas
+,0,Kick-off & housekeeping,"Instala Anaconda/pyenv, VS Code, Git",Configura repo + .gitignore,Estructura carpetas (1)…(13),Pre-commit & black,README “roadmap”,Repo inicial empuja sin linter errors,,"(1)Intro (datos, conversion, concatenacion)"
+,1,Control de flujo avanzado,Repaso if/for/while,match+pattern matching,List/dict comprehensions,Retos refactor vs loops,Push + review,Notebook 02_comprehensions.ipynb,,(2)ControlFlujo
+,2,Errores & logging,Jerarquía de Excepciones,try/except/else/finally,Módulo logging,RotatingFileHandler,Kata: parsear 50 CSVs con log,Script csv_parser.py con logs limpios,,(3)funciones
+,3,pandas 3.0 I,Leer 10 Minutes to pandas pandas.pydata.org,Cargar dataset Netflix kaggle.com,Inspección y tipos,Missing & dupes,Commit notebook,Notebook 01_netflix_eda.ipynb,,(4)Tipos_Datos_Avanzados
+,4,pandas II (transform),Agrupar & pivot,"Funciones apply, pipe",Joins/merge,Time-series intro,Sesión dudas,KPI = script que calcule top-5 títulos por rating,,(5)Ejercicios
+,5,Rendimiento & Polars,Instala Polars docs.pola.rs,Re-escribe EDA en Polars,Benchmark vs pandas,Profiling simple,Push & README comparativo,Velocidad ≥ ×4 en operación clave,,(6)Errores_Logging
+,6,SQL I: SELECT-FROM-WHERE,Mode SQL tutorial cap 1-3 mode.com,Instala SQLite o Docker Postgres,Crea db_init.sql,10 retos LeetCode SQL 50 leetcode.com,Commit scripts,10/10 test pasan,,"(7)Pandas_Polars/{datasets,notebooks,scripts} "
+,7,SQL II: JOIN + agregación,INNER/LEFT/RIGHT,GROUP BY + HAVING,Subqueries,STRING func,10 retos más,20/50 problemas completados,,(8)SQL_Playground
+,8,SQL III: ventanas & CTE,Window func mode.com,CTE & views,Index/EXPLAIN,Dashboard mini (Sheets/Tableau),Review,Consulta devuelve métricas correctas,,(9)Visualizacion/figures 
+,9,Visualización I,Matplotlib básico,Seaborn temas,Gráficas Netflix KPIs,Guards en figures/,Push,5 plots con storytelling,,(10)Estadistica
+,10,Visualización II (interactiva),Plotly Express,Dash intro (opcional),Publica gist,Feedback redes,Refactor,Mini-dashboard accesible en localhost,,"(11)ML_Basico/{/src,/models,/reports}"
+,11,Estadística descriptiva,"Media, var, IQR",Distribuciones,Box/violin auto,Script métricas,README teoría,Script reproduce métricas en CI,,(12)Portafolio
+,12,Probabilidad & muestreo,Leyes básicas,Bootstrap,Simulación 10 k iter,A/B fake,Doc,Notebook ab_bootstrap.ipynb,,(13)Recursos
+,13,Tests de hipótesis,"t-test, χ², ANOVA",P-value vs α,Corrección Bonferroni,Caso real dataset Airlines,Peer-review,Informe .md con conclusión,,
+,14,Fechas & feature eng.,pd.to_datetime,Resample,Lag/lead features,Holidays mapping,Commit,Función make_features() con tests,,
+,15,Regex & limpieza texto,Basics re,pandas .str métodos,Expresiones complejas,Log cleaning,Push,Script limpia 5 MB log en < 5 s,,
+,16,ML 0: regresión,scikit-learn pipeline,Split/metrics RMSE,Linear vs tree,Feature importance,Commit,RMSE < baseline media,,
+,17,ML 1: clasificación,Logistic vs RF,ROC/AUC,GridSearchCV,Oversampling (SMOTE),Write-up,ROC AUC ≥ 0.8,,
+,18,ML 2: clustering,"k-means, silhouette",Scaling,PCA visualization,Caso customer seg,Blog draft,Silhouette > 0.5,,
+,19,Kaggle warm-up,Lee reglas Beginner’s Hypothesis 2025 kaggle.com,EDA competition,Baseline submission,Fórum feedback,Score tracking,Rank top-70 %,,
+,20,Kaggle mejora modelo,Feature eng iterativa,Ensemble ligera,Submission loop,Documenta,Commit,Rank top-50 %,,
+,21,Portafolio polish,Refactor dirs,Badges CI,Licencia MIT,README bilingüe,Post LinkedIn,3 repos “ready-for-recruiter”,,
+,22,Soft skills & entrevistas,STAR stories,SQL whiteboard drills,Mock interview,CV ATS-friendly,Outreach 10 apps,3 entrevistas agendadas,,
+,23,Certificación (opcional),Coursera Google Data Analytics (módulos 1-4) coursera.org,Quizzes,Peer review,Slack grupo,Progreso 60 %,,,
+,24,Certificación & job hunt,Termina módulos 5-8,Capstone,Subir diploma,Retro en README,10 apps extra,Certificado + pipeline de ofertas,,

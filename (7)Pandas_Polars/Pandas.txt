@@ -1,0 +1,28 @@
+🔎 ¿Qué demonios es Pandas y por qué te debe importar?
+Pandas es la librería estrella para manipulación y análisis de datos en Python.
+
+- Piénsalo como el “Excel” de los programadores, pero con superpoderes: lee millones de filas, 
+filtra, limpia, resume y transforma datos de manera elegante y rápida.
+- Su objeto principal: DataFrame (piensa en él como una tabla tipo Excel, pero en código).
+- Sin Pandas no hay ciencia de datos seria en Python. 
+
+
+Basicos de pandas:
+
+     Subtema         |            ¿Qué es y para qué sirve?               |          Acción concreta                                                                                                   
+---------------------|----------------------------------------------------|--------------------------------------                                                                                           
+Leer datasets        |  Cargar archivos CSV, Excel, JSON en DataFrames	  |  pd.read_csv('file.csv')
+---------------------|----------------------------------------------------|--------------------------------------                                                                                           
+Inspección básica    |  Saber qué tienes (shape, tipos, primeros/últimos  |  .head(), .tail(), .info(), .describe()
+                     |  registros)	                                      |  
+---------------------|----------------------------------------------------|--------------------------------------
+Selección de datos	 |  Filtrar filas/columnas; seleccionar por posición  |  df.loc[], df.iloc[], df['col']
+                     |  o nombre	                                      |  
+---------------------|----------------------------------------------------|--------------------------------------
+Tipos de datos	     |  Convertir columnas (fechas, números, strings)	  |  pd.to_datetime(), .astype()
+---------------------|----------------------------------------------------|--------------------------------------
+Nulos y duplicados	 |  Detectar y limpiar valores faltantes y repetidos  |  .isnull(), .dropna(), .drop_duplicates()
+---------------------|----------------------------------------------------|--------------------------------------
+Operaciones básicas	 |  Calcular promedios, sumas, conteos rápidos	      |  .mean(), .sum(), .value_counts()
+---------------------|----------------------------------------------------|--------------------------------------
+Guardar resultados	 |  Exportar a CSV, Excel, etc.	                      |  .to_csv(), .to_excel()
